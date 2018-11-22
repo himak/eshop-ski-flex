@@ -1,0 +1,116 @@
+.slider {
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	// Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 1170px;
+	  position: relative;
+	z-index: 0;
+	  margin: auto;
+	}
+
+	.mySlides {
+		background-image: url('../img/slider-bg-1.svg');
+		background-repeat: no-repeat;
+		background-size: 900px 760px;
+		position: relative;
+		z-index: 1;
+	}
+
+	/* Caption text */
+	.text {
+	  color: #fff;
+	  position: absolute;
+	  top: 100px;
+	  left: 40px;
+  		z-index: 12;
+
+
+  		background-image: url('../img/slider-bg-1.svg');
+  		background-repeat: no-repeat;
+  		background-size: 900px 760px;
+
+
+	  &:before {
+	  	content: "";
+	  	// background: rgb(25,171,246);
+	  	// background: linear-gradient(0deg, rgba(25,171,246,1) 0%, rgba(45,214,208,1) 100%);
+	  	// background-image: url('../img/slider-bg-1.svg');
+	  	// background-repeat: no-repeat;
+	  	// background-size: 900px 760px;
+
+	  	// width: 300px;
+	  	// height: 200px;
+	  	// border-radius: 50px;
+	  	// display: block;
+	  	// position: absolute;
+	  	// z-index: 4;
+	  }
+
+	  h3, h4 {
+	  	margin: 0;
+	  	text-transform: uppercase;
+	  }
+
+	  h3 {
+	  	font-size: 48px;
+	  	font-weight: 600;
+	  }
+
+	  h4 {
+	  	font-size: 36px;
+	  	font-weight: 200;
+	  }
+
+	  p {
+	  	font-size: 16px;
+	  	max-width: 354px;
+	  }
+	}
+
+	.dots {
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+	}
+	/* The dots/bullets/indicators */
+	.dot {
+	  height: 8px;
+	  width: 8px;
+	  margin: 0 2px;
+	  background-color: #fff;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active {
+	  background-color: #1AADF4;
+	}
+
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .text {font-size: 11px}
+	}
+}

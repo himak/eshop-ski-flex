@@ -1,0 +1,14 @@
+.benefits {
+	display: table;
+	width: 100%;
+}
+
+.benefit {
+	display: table-cell;
+	width: 25%;
+
+	p {
+		font-size: 14px;
+		margin: 6px 0;
+	}
+}

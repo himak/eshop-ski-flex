@@ -1,0 +1,37 @@
+.navigation {
+	border: 1px solid #EBEBEB;
+	border-width: 1px 0;
+
+	ul {
+
+	}
+
+	li {
+		margin-right: 60px;
+
+		&.active {
+
+			a {
+				color: #037EDE;
+				border: 3px solid #037EDE;
+				border-width: 3px 0 0 0;
+			}
+		}
+	}
+
+	a {
+		color: #111111;
+		font-size: 16px;
+		text-transform: uppercase;
+		height: 52px;
+		line-height: 56px;
+		display: inline-block;
+
+		&:hover,
+		&:focus {
+			color: #037EDE;
+			border: 3px solid #037EDE;
+			border-width: 3px 0 0 0;
+		}
+	}
+}
