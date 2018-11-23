@@ -1,2 +1,2 @@
 # eshop-ski-flex
-Example development e-shop webdesign in PSD to HTML, CSS with flexbox.
+Example development e-shop webdesign from PSD to HTML, CSS with flexbox.
