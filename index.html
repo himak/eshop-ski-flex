@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="sk">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Homepage</title>
 	<link rel="stylesheet" href="assets/css/homepage.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
@@ -25,7 +26,7 @@
 				<h1 class="logo">LOGO</h1>
 				<form action="#" class="search">
 					<label class="search-label sr-only" for="search-input">Vyhľadať produkt</label>
-					<input type="text" placeholder="Vyhľadať produkt..." class="search-input" name="search-input">
+					<input type="text" placeholder="Vyhľadať produkt..." class="search-input" name="search-input" id="search-input">
 					<button type="submit" class="btn-search"></button>
 				</form>
 				<a href="#" class="btn-cart"><span class="count">10</span><span class="sum">2500.92&nbsp;€</span></a>
@@ -49,10 +50,10 @@
 		</div>
 	</header>
 
-	<section class="slider">
+	<div class="slider">
 		<div class="slideshow-container">
 			<div class="mySlides fade">
-				<img src="assets/img/slider1.jpg" style="width:100%">
+				<img src="assets/img/slider1.jpg" style="width:100%" alt="slider">
 				<div class="bg-one">
 					<div class="text">
 						<h3>Lorem Ipsum</h3>
@@ -63,7 +64,7 @@
 			</div>
 
 			<div class="mySlides fade">
-				<img src="assets/img/slider2.jpg" style="width:100%">
+				<img src="assets/img/slider2.jpg" style="width:100%" alt="slider">
 				<div class="bg-two">
 					<div class="text">
 						<h3>Lorem Ipsum</h3>
@@ -74,7 +75,7 @@
 			</div>
 
 			<div class="mySlides fade">
-				<img src="assets/img/slider1.jpg" style="width:100%">
+				<img src="assets/img/slider1.jpg" style="width:100%" alt="slider">
 				<div class="bg-tree">
 					<div class="text">
 						<h3>Lorem Ipsum</h3>
@@ -90,9 +91,9 @@
 				<span class="dot"></span>
 			</div>
 		</div>
-	</section>
+	</div>
 
-	<section class="container">
+	<div class="container">
 		<div class="banners">
 			<a href="#" class="banner">
 				<div class="text">
@@ -122,30 +123,184 @@
 				</div>
 			</a>
 		</div>
-	</section>
+	</div>
 
-	<section class="container">
+	<div class="container">
 		<div class="benefits">
-			<div class="benefit one">
+			<div class="benefit hotline">
 				<p><strong>Dolorem sit amet</strong></p>
 				<p>lorem ipsum dolor sit amet</p>
 			</div>
-			<div class="benefit two">
+			<div class="benefit star">
 				<p><strong>Dolorem sit amet</strong></p>
 				<p>lorem ipsum dolor sit amet</p>
 			</div>
-			<div class="benefit tree">
+			<div class="benefit package">
 				<p><strong>Dolorem sit amet</strong></p>
 				<p>lorem ipsum dolor sit amet</p>
 			</div>
-			<div class="benefit four">
+			<div class="benefit finger">
 				<p><strong>Dolorem sit amet</strong></p>
 				<p>lorem ipsum dolor sit amet</p>
 			</div>
 		</div>
+	</div>
+
+	<section class="latest">
+		<h2 class="section-title">NOVINKY</h2>
+		<div class="container">
+			<div class="product-layout">
+				<div class="product-thumb">
+					<a href="#">
+						<img src="assets/img/products/1.jpg" alt="1">
+					</a>
+					<h4 class="product-name">Názov produktu</h4>
+					<div class="caption">
+						<p class="prices">
+							<span class="price">37,98 €</span>
+							<!-- <span class="price-old"></span> -->
+						</p>
+						<button type="button" class="btn-buy"><span class="sr-only">Kúpiť</span></button>
+					</div>
+				</div>
+
+				<div class="product-thumb">
+					<a href="#">
+						<img src="assets/img/products/2.jpg" alt="2">
+					</a>
+					<h4 class="product-name">Názov produktu</h4>
+					<div class="caption">
+						<p class="prices">
+							<span class="price-new">35,76 €</span>
+							<span class="price-old">40,76 €</span>
+						</p>
+						<button type="button" class="btn-buy"><span class="sr-only">Kúpiť</span></button>
+					</div>
+				</div>
+
+				<div class="product-thumb">
+					<a href="#">
+						<img src="assets/img/products/3.jpg" alt=3">
+					</a>
+					<h4 class="product-name">Názov produktu, ktorý je veľmi veľmi veľmi dlhý</h4>
+					<div class="caption">
+						<p class="prices">
+							<span class="price">37,98 €</span>
+							<!-- <span class="price-old"></span> -->
+						</p>
+						<button type="button" class="btn-buy"><span class="sr-only">Kúpiť</span></button>
+					</div>
+				</div>
+
+				<div class="product-thumb">
+					<a href="#">
+						<img src="assets/img/products/4.jpg" alt="4">
+					</a>
+					<h4 class="product-name">Názov produktu</h4>
+					<div class="caption">
+						<p class="prices">
+							<span class="price">37,98 €</span>
+							<!-- <span class="price-old"></span> -->
+						</p>
+						<button type="button" class="btn-buy"><span class="sr-only">Kúpiť</span></button>
+					</div>
+				</div>
+
+				<div class="product-thumb">
+					<a href="#">
+						<img src="assets/img/products/5.jpg" alt="5">
+					</a>
+					<h4 class="product-name">Názov produktu</h4>
+					<div class="caption clearfix">
+						<p class="prices">
+							<span class="price-new">37,98 €</span>
+							<span class="price-old">45,34 €</span>
+						</p>
+						<button type="button" class="btn-buy"><span class="sr-only">Kúpiť</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<script src="assets/js/slider.js" type="text/javascript" charset="utf-8" async defer></script>
+	<section class="specials">
+		<h2 class="section-title">AKCIOVÉ PRODUKY</h2>
+		<div class="container">
+			<div class="product-layout">
+				<div class="product-thumb">
+					<a href="#">
+						<img src="assets/img/products/6.jpg" alt="6">
+					</a>
+					<h4 class="product-name">Názov produktu</h4>
+					<div class="caption">
+						<p class="prices">
+							<span class="price-new">37,98 €</span>
+							<span class="price-old">45,34 €</span>
+						</p>
+						<button type="button" class="btn-buy"><span class="sr-only">Kúpiť</span></button>
+					</div>
+				</div>
+
+				<div class="product-thumb">
+					<a href="#">
+						<img src="assets/img/products/7.jpg" alt="7">
+					</a>
+					<h4 class="product-name">Názov produktu</h4>
+					<div class="caption">
+						<p class="prices">
+							<span class="price-new">35,76 €</span>
+							<span class="price-old">40,76 €</span>
+						</p>
+						<button type="button" class="btn-buy"><span class="sr-only">Kúpiť</span></button>
+					</div>
+				</div>
+
+				<div class="product-thumb">
+					<a href="#">
+						<img src="assets/img/products/8.jpg" alt=8">
+					</a>
+					<h4 class="product-name">Názov produktu, ktorý je veľmi veľmi veľmi dlhý</h4>
+					<div class="caption">
+						<p class="prices">
+							<span class="price-new">37,98 €</span>
+							<span class="price-old">50,34 €</span>
+						</p>
+						<button type="button" class="btn-buy"><span class="sr-only">Kúpiť</span></button>
+					</div>
+				</div>
+
+				<div class="product-thumb">
+					<a href="#">
+						<img src="assets/img/products/9.jpg" alt="9">
+					</a>
+					<h4 class="product-name">Názov produktu</h4>
+					<div class="caption">
+						<p class="prices">
+							<span class="price-new">37,98 €</span>
+							<span class="price-old">64,23 €</span>
+						</p>
+						<button type="button" class="btn-buy"><span class="sr-only">Kúpiť</span></button>
+					</div>
+				</div>
+
+				<div class="product-thumb">
+					<a href="#">
+						<img src="assets/img/products/10.jpg" alt="10">
+					</a>
+					<h4 class="product-name">Názov produktu</h4>
+					<div class="caption clearfix">
+						<p class="prices">
+							<span class="price-new">37,98 €</span>
+							<span class="price-old">45,34 €</span>
+						</p>
+						<button type="button" class="btn-buy"><span class="sr-only">Kúpiť</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="assets/js/slider.js"></script>
 
 </body>
 </html>
