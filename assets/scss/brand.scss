@@ -1,0 +1,38 @@
+.brand {
+	height: 100px;
+	border: 1px solid #E1E1E1;
+	border-width: 1px 0;
+	margin: 20px 0;
+}
+
+.brand-title {
+	float: left;
+	font-size: 20px;
+	font-weight: 600;
+	color: #ACB5BE;
+	line-height: 60px;
+}
+
+.brand-gallery {
+	float: right;
+	// display: flex;
+	line-height: 94px;
+
+	img {
+		height: 40px;
+		width: auto;
+		margin-right: 70px;
+		filter: grayscale(100%);
+		opacity: .4;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover,
+		&:focus {
+			filter: grayscale(0%);
+			opacity: .9;
+		}
+	}
+}

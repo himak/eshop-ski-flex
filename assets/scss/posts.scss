@@ -1,0 +1,41 @@
+.post-container {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.post {
+	margin-right: 20px;
+	background-color: #F0F0F0;
+	display: flex;
+	width: 50%;
+	transition: transform .2s;
+	cursor: pointer;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:hover,
+	&:focus {
+		transform: scale(1.01);
+
+		.post-title {
+			color: #037EDE;
+		}
+	}
+}
+
+.post-content {
+	padding: 20px;
+}
+
+.post-title {
+	font-size: 16px;
+	font-weight: 600;
+	color: #111111;
+}
+
+.post-text {
+	font-size: 14px;
+	color: #898989;
+}

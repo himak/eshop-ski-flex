@@ -1,0 +1,45 @@
+.newslatter {
+	display: flex;
+
+	.newslatter-input,
+	.btn-newslatter {
+		height: 38px;
+		line-height: 38px;
+
+		&:hover,
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.newslatter-input {
+		border: 1px solid #EBEBEB;
+		border-radius: 3px 0 0 3px;
+		font-size: 14px;
+		padding-left: 20px;
+		min-width: 300px;
+
+		&::placeholder {
+			color: #B2B2B2;
+		}
+	}
+
+	.btn-newslatter	 {
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMSAxNCI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6Izg5ODk4OTt9PC9zdHlsZT48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEyMTMuOTk5IC0xMykiPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTIxNCwyN2gyMVYxM2gtMjFabTEwLjUtNC43OCwyLjM1Ni0xLjkyNyw2LjQ3OSw1LjgzaC0xNy42NzFsNi40NzktNS44M1ptMy4wNzgtMi41MTgsNi40NDYtNS4yNzJWMjUuNVptLTMuMDc4LDEuMzMyLTguNzUxLTcuMTU3aDE3LjVabS0zLjA3OS0xLjMzMi02LjQ0Niw1LjhWMTQuNDNaIi8+PC9nPjwvc3ZnPg==);
+		background-repeat: no-repeat;
+		background-size: 18px;
+		background-position: 10px 9px;
+		border-radius: 0 3px 3px 0;
+		border-color: #EBEBEB;
+		padding-right: 20px;
+		padding-left: 20px;
+		position: relative;
+		left: -1px;
+		border-width: 1px 1px 1px 0;
+
+		&:hover,
+		&:focus {
+			background-color: #f0f0f0;
+		}
+	}
+}
